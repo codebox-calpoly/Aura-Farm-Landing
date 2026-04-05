@@ -1,12 +1,13 @@
  "use client";
 
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import BubbleBackground from "../ui/bubble-background";
 import challenges from "./data/challenges.json";
 
 export default function Home() {
   const marqueeItems = Array.from({ length: 5 }, () => challenges).flat();
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     if ("scrollRestoration" in window.history) {
@@ -51,6 +52,15 @@ export default function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    const onScroll = () => {
+      setIsScrolled(window.scrollY > 12);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
 
   return (
     <div className="relative isolate min-h-screen text-black">
@@ -68,7 +78,11 @@ export default function Home() {
         bubbleSize="90%"
         blendMode="screen"
       />
-      <header className="sticky top-0 z-50 w-full bg-transparent">
+      <header
+        className={`sticky top-0 z-50 w-full transition-colors duration-300 ${
+          isScrolled ? "bg-white/40 backdrop-blur" : "bg-transparent"
+        }`}
+      >
         <div className="flex h-[var(--top-bar-height)] items-center justify-between px-4 sm:px-6 lg:px-10">
           <div className="flex items-center gap-2">
             <Image
