@@ -33,7 +33,7 @@
   --color-aura-purple: var(--aura-purple);
   --color-aura-black: var(--aura-black);
   --color-aura-white: var(--aura-white);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-inter);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -47,7 +47,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
 
 .reveal {

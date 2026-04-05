@@ -113,7 +113,10 @@ export default function Home() {
                   priority
                 />
               </div>
-              <p className="reveal mt-6 text-center" data-reveal>
+              <p
+                className="reveal mt-6 text-center text-xl font-semibold text-black sm:text-2xl"
+                data-reveal
+              >
                 Accept challenges, earn points, gain aura
               </p>
               <div className="mt-10" data-reveal>
@@ -129,9 +132,9 @@ export default function Home() {
                             <strong>{challenge.title}</strong>
                           </p>
                           <p className="mt-1">{challenge.description}</p>
-                          <p className="mt-2 text-aura-green">
-                            +{challenge.points} aura
-                          </p>
+                            <p className="mt-2 text-aura-green font-semibold">
+                              +{challenge.points} aura
+                            </p>
                         </div>
                       ))}
                     </div>
@@ -145,9 +148,9 @@ export default function Home() {
                             <strong>{challenge.title}</strong>
                           </p>
                           <p className="mt-1">{challenge.description}</p>
-                          <p className="mt-2 text-aura-green">
-                            +{challenge.points} aura
-                          </p>
+                            <p className="mt-2 text-aura-green font-semibold">
+                              +{challenge.points} aura
+                            </p>
                         </div>
                       ))}
                     </div>
@@ -162,7 +165,10 @@ export default function Home() {
           <div className="mx-auto flex w-full max-w-6xl flex-col justify-center gap-10 px-6 sm:px-8 lg:px-10">
             <div className="grid items-center gap-8 md:grid-cols-[1.1fr_0.9fr]">
               <div className="w-full text-center md:justify-self-start md:max-w-sm md:text-left">
-                <h2 className="reveal" data-reveal>
+                <h2
+                  className="reveal text-2xl font-semibold sm:text-3xl md:text-4xl"
+                  data-reveal
+                >
                   New challenges every week.
                 </h2>
               </div>
@@ -186,7 +192,10 @@ export default function Home() {
                 />
               </div>
               <div className="order-1 w-full text-center md:order-2 md:justify-self-start md:max-w-sm md:text-right">
-                <h2 className="reveal" data-reveal>
+                <h2
+                  className="reveal text-2xl font-semibold sm:text-3xl md:text-4xl"
+                  data-reveal
+                >
                   Complete and submit for points.
                 </h2>
               </div>
@@ -198,7 +207,10 @@ export default function Home() {
           <div className="mx-auto flex w-full max-w-6xl flex-col justify-center gap-10 px-6 sm:px-8 lg:px-10">
             <div className="grid items-center gap-8 md:grid-cols-[1.1fr_0.9fr]">
               <div className="w-full text-center md:justify-self-start md:max-w-sm md:text-left">
-                <h2 className="reveal" data-reveal>
+                <h2
+                  className="reveal text-2xl font-semibold sm:text-3xl md:text-4xl"
+                  data-reveal
+                >
                   Climb the leaderboard and compete with friends.
                 </h2>
               </div>
@@ -214,7 +226,10 @@ export default function Home() {
 
         <section className="relative z-10 min-h-[calc(100vh-var(--top-bar-height))] py-16 md:py-24 box-border flex items-center">
           <div className="flex w-full flex-col items-center justify-center px-4 sm:px-6 lg:px-10">
-            <h2 className="reveal" data-reveal>
+            <h2
+              className="reveal text-xl font-semibold sm:text-2xl"
+              data-reveal
+            >
               Ready to accept the challenge?
             </h2>
             <button
