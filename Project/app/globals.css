@@ -12,6 +12,14 @@
   --aura-purple: #b709ff;
   --aura-black: #383737;
   --aura-white: #ffffff;
+  --aura-red-rgb: 204, 10, 25;
+  --aura-orange-rgb: 243, 142, 8;
+  --aura-yellow-rgb: 255, 214, 9;
+  --aura-green-rgb: 79, 185, 72;
+  --aura-blue-rgb: 43, 9, 255;
+  --aura-purple-rgb: 183, 9, 255;
+  --aura-black-rgb: 56, 55, 55;
+  --aura-white-rgb: 255, 255, 255;
 }
 
 @theme inline {
@@ -45,6 +53,7 @@ body {
 .reveal {
   opacity: 0;
   transform: translateY(18px);
+  filter: none;
   transition: opacity 700ms cubic-bezier(0.2, 0.65, 0.2, 1),
     transform 700ms cubic-bezier(0.2, 0.65, 0.2, 1);
   will-change: transform, opacity;
@@ -53,6 +62,67 @@ body {
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+  filter: none;
+}
+
+.bubble-background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+  background: var(
+    --bb-bg-gradient,
+    radial-gradient(
+      120% 120% at 0% 0%,
+      var(--bb-bg-color-a, #2b09ff),
+      var(--bb-bg-color-b, #b709ff)
+    )
+  );
+  --bb-bubble-size: 90%;
+  --bb-blend-mode: screen;
+  --bb-bubble-opacity: 0.45;
+  --bb-speed: 0.7;
+  background-color: var(--aura-white);
+  filter: saturate(0.9);
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+.bubble-background--fixed {
+  position: fixed;
+  inset: 0;
+}
+
+.bubble-background__bubble {
+  position: absolute;
+  top: var(--bubble-top);
+  left: var(--bubble-left);
+  width: calc(var(--bb-bubble-size) * var(--bubble-scale));
+  height: calc(var(--bb-bubble-size) * var(--bubble-scale));
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(var(--bubble-color), 0.6),
+    rgba(var(--bubble-color), 0) 70%
+  );
+  border-radius: 999px;
+  mix-blend-mode: var(--bb-blend-mode);
+  opacity: var(--bb-bubble-opacity);
+  filter: blur(12px);
+  animation: bubble-float var(--bubble-duration) ease-in-out infinite;
+  animation-delay: var(--bubble-delay);
+  animation-duration: calc(var(--bubble-duration) * var(--bb-speed, 1));
+}
+
+@keyframes bubble-float {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate3d(0, -6%, 0) scale(1.05);
+  }
 }
 
 .marquee {
@@ -97,5 +167,9 @@ body {
     opacity: 1;
     transform: none;
     transition: none;
+  }
+
+  .bubble-background__bubble {
+    animation: none;
   }
 }
