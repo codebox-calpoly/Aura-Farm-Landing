@@ -6,24 +6,25 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white text-black">
+      <header className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur">
+        <div className="flex items-center justify-between px-4 py-6 sm:px-6 lg:px-10">
+          <div className="flex items-center gap-2">
+            <Image
+              src="/logo.svg"
+              alt="Aura Farm logo"
+              width={50}
+              height={50}
+            />
+          </div>
+          <button className="rounded-full bg-[#4FB948] px-6 py-3 text-white transition hover:bg-[#43a43f]">
+            Download
+          </button>
+        </div>
+      </header>
       <main>
         <section className="relative h-[180vh]">
           <div className="sticky top-0">
             <div className="flex min-h-screen w-full flex-col px-4 sm:px-6 lg:px-10">
-              <header className="flex items-center justify-between py-6">
-                <div className="flex items-center gap-2">
-                  <Image
-                    src="/logo.svg"
-                    alt="Aura Farm logo"
-                    width={32}
-                    height={32}
-                  />
-                </div>
-                <button className="rounded-full bg-[#4FB948] px-6 py-3 text-white transition hover:bg-[#43a43f]">
-                  Download
-                </button>
-              </header>
-
               <div className="flex flex-1 flex-col justify-center pb-12">
                 <div className="flex flex-col items-center">
                   <Image
