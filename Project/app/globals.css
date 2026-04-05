@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --top-bar-height: 80px;
   --aura-red: #cc0a19;
   --aura-orange: #f38e08;
   --aura-yellow: #ffd609;
@@ -41,6 +42,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 700ms cubic-bezier(0.2, 0.65, 0.2, 1),
+    transform 700ms cubic-bezier(0.2, 0.65, 0.2, 1);
+  will-change: transform, opacity;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .marquee {
   --marquee-gap: 1rem;
   --marquee-card-width: clamp(225px, 28vw, 325px);
@@ -77,5 +91,11 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .marquee__track {
     animation: none;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }
