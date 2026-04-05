@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Hike the P",
+    "description": "yeah go touch grass bruh",
+    "points": 50
+  },
+  {
+    "title": "Find Waldo",
+    "description": "yes he is somewhere on campus",
+    "points": 30
+  },
+  {
+    "title": "Go horseback riding",
+    "description": "neigh.",
+    "points": 40
+  },
+  {
+    "title": "Catch a sunrise with friends",
+    "description": "find a viewpoint and bring snacks :D",
+    "points": 25
+  }, 
+  {
+    "title": "Go to a concert",
+    "description": "and dance (don't be lame)",
+    "points": 35
+  },
+  {
+    "title": "Find a unique thrift find",
+    "description": "one person's trash is another's treasure",
+    "points": 20
+  }
+  
+]

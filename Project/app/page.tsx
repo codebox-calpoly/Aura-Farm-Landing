@@ -1,6 +1,9 @@
 import Image from "next/image";
+import challenges from "./data/challenges.json";
 
 export default function Home() {
+  const marqueeItems = Array.from({ length: 5 }, () => challenges).flat();
+
   return (
     <div className="min-h-screen bg-white text-black">
       <main>
@@ -37,46 +40,40 @@ export default function Home() {
                   Accept challenges, earn points, gain aura.
                 </p>
                 <div className="mt-10">
-                  <div className="flex w-full flex-nowrap gap-4 overflow-x-auto pb-4">
-                    <div className="min-w-[160px] flex-1 rounded-2xl border-2 border-black bg-white/70 px-4 py-3">
-                      <p>
-                        Challenge
-                      </p>
-                      <p className="mt-3">Debug Dash</p>
-                      <p className="mt-1 text-aura-green">
-                        +50 aura
-                      </p>
-                    </div>
-                    <div className="min-w-[160px] flex-1 rounded-2xl border-2 border-black bg-white/70 px-4 py-3">
-                      <p>
-                        Challenge
-                      </p>
-                      <p className="mt-3">
-                        Refactor Relay
-                      </p>
-                      <p className="mt-1 text-aura-green">
-                        +30 aura
-                      </p>
-                    </div>
-                    <div className="min-w-[160px] flex-1 rounded-2xl border-2 border-black bg-white/70 px-4 py-3">
-                      <p>
-                        Challenge
-                      </p>
-                      <p className="mt-3">
-                        Prompt Sprint
-                      </p>
-                      <p className="mt-1 text-aura-green">
-                        +40 aura
-                      </p>
-                    </div>
-                    <div className="min-w-[160px] flex-1 rounded-2xl border-2 border-black bg-white/70 px-4 py-3">
-                      <p>
-                        Challenge
-                      </p>
-                      <p className="mt-3">Aura Stack</p>
-                      <p className="mt-1 text-aura-green">
-                        +25 aura
-                      </p>
+                  <div className="marquee">
+                    <div className="marquee__track">
+                      <div className="marquee__group">
+                        {marqueeItems.map((challenge, index) => (
+                          <div
+                            key={`${challenge.title}-${index}`}
+                            className="marquee__card rounded-2xl border-2 border-black bg-white/70 px-4 py-3"
+                          >
+                            <p className="mt-3">
+                              <strong>{challenge.title}</strong>
+                            </p>
+                            <p className="mt-1">{challenge.description}</p>
+                            <p className="mt-2 text-aura-green">
+                              +{challenge.points} aura
+                            </p>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="marquee__group" aria-hidden="true">
+                        {marqueeItems.map((challenge, index) => (
+                          <div
+                            key={`${challenge.title}-${index}-clone`}
+                            className="marquee__card rounded-2xl border-2 border-black bg-white/70 px-4 py-3"
+                          >
+                            <p className="mt-3">
+                              <strong>{challenge.title}</strong>
+                            </p>
+                            <p className="mt-1">{challenge.description}</p>
+                            <p className="mt-2 text-aura-green">
+                              +{challenge.points} aura
+                            </p>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>

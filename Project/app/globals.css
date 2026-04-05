@@ -40,3 +40,42 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.marquee {
+  --marquee-gap: 1rem;
+  --marquee-card-width: clamp(225px, 28vw, 325px);
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  gap: var(--marquee-gap);
+  animation: marquee-scroll 200s linear infinite;
+  will-change: transform;
+}
+
+.marquee__group {
+  display: flex;
+  gap: var(--marquee-gap);
+}
+
+.marquee__card {
+  flex: 0 0 var(--marquee-card-width);
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track {
+    animation: none;
+  }
+}
