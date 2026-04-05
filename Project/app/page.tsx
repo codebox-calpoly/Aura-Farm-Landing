@@ -123,7 +123,7 @@ export default function Home() {
                       {marqueeItems.map((challenge, index) => (
                         <div
                           key={`${challenge.title}-${index}`}
-                          className="marquee__card rounded-2xl border-2 border-black bg-white/70 px-4 py-3"
+                          className="marquee__card rounded-2xl bg-white/70 px-4 py-3"
                         >
                           <p className="mt-3">
                             <strong>{challenge.title}</strong>
@@ -139,7 +139,7 @@ export default function Home() {
                       {marqueeItems.map((challenge, index) => (
                         <div
                           key={`${challenge.title}-${index}-clone`}
-                          className="marquee__card rounded-2xl border-2 border-black bg-white/70 px-4 py-3"
+                          className="marquee__card rounded-2xl bg-white/70 px-4 py-3"
                         >
                           <p className="mt-3">
                             <strong>{challenge.title}</strong>
@@ -159,14 +159,14 @@ export default function Home() {
         </section>
 
         <section className="relative z-10 py-16 md:py-24">
-          <div className="flex w-full flex-col justify-center gap-10 px-4 sm:px-6 lg:px-10">
+          <div className="mx-auto flex w-full max-w-6xl flex-col justify-center gap-10 px-6 sm:px-8 lg:px-10">
             <div className="grid items-center gap-8 md:grid-cols-[1.1fr_0.9fr]">
-              <div className="text-center md:text-left">
+              <div className="w-full text-center md:justify-self-start md:max-w-sm md:text-left">
                 <h2 className="reveal" data-reveal>
-                  New challenges every week
+                  New challenges every week.
                 </h2>
               </div>
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center md:justify-start">
                 <div
                   className="reveal aspect-[3/4] w-full max-w-sm rounded-2xl border-2 border-black bg-white/70"
                   data-reveal
@@ -177,17 +177,17 @@ export default function Home() {
         </section>
 
         <section className="relative z-10 py-16 md:py-24">
-          <div className="flex w-full flex-col justify-center gap-10 px-4 sm:px-6 lg:px-10">
-            <div className="grid items-center gap-8 md:grid-cols-[0.9fr_1.1fr]">
-              <div className="order-2 flex items-center justify-center md:order-1">
+          <div className="mx-auto flex w-full max-w-6xl flex-col justify-center gap-10 px-6 sm:px-8 lg:px-10">
+            <div className="grid items-center gap-8 md:grid-cols-[1.1fr_0.9fr]">
+              <div className="order-2 flex items-center justify-center md:order-1 md:justify-start">
                 <div
                   className="reveal aspect-[3/4] w-full max-w-sm rounded-2xl border-2 border-black bg-white/70"
                   data-reveal
                 />
               </div>
-              <div className="order-1 text-center md:order-2 md:text-left">
+              <div className="order-1 w-full text-center md:order-2 md:justify-self-start md:max-w-sm md:text-right">
                 <h2 className="reveal" data-reveal>
-                  Complete and submit for points
+                  Complete and submit for points.
                 </h2>
               </div>
             </div>
@@ -195,14 +195,14 @@ export default function Home() {
         </section>
 
         <section className="relative z-10 py-16 md:py-24">
-          <div className="flex w-full flex-col justify-center gap-10 px-4 sm:px-6 lg:px-10">
+          <div className="mx-auto flex w-full max-w-6xl flex-col justify-center gap-10 px-6 sm:px-8 lg:px-10">
             <div className="grid items-center gap-8 md:grid-cols-[1.1fr_0.9fr]">
-              <div className="text-center md:text-left">
+              <div className="w-full text-center md:justify-self-start md:max-w-sm md:text-left">
                 <h2 className="reveal" data-reveal>
-                  Climb the leaderboard and compete with friends
+                  Climb the leaderboard and compete with friends.
                 </h2>
               </div>
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center md:justify-start">
                 <div
                   className="reveal aspect-[3/4] w-full max-w-sm rounded-2xl border-2 border-black bg-white/70"
                   data-reveal
