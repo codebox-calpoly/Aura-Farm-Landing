@@ -24,8 +24,8 @@ const faq = [
     a: "Yes. Forever for the core experience. No ads. No premium tier-buying. Aura is earned, not bought.",
   },
   {
-    q: "When does it launch?",
-    a: "Spring 2026 at Cal Poly. Add your email below and we'll text you when the app drops on iOS and Android.",
+    q: "Where do I get the app?",
+    a: "On the iOS App Store. Scroll up and tap Download on the App Store, or use the Get the app buttons in the nav — that opens our listing. You will need a @calpoly.edu email to sign up for the Cal Poly campus.",
   },
 ];
 

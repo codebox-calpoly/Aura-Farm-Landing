@@ -1,3 +1,5 @@
+import { appStoreLinkProps } from "@/lib/app-links";
+
 export default function CalPolyCallout() {
   return (
     <section className="relative z-10 py-16 sm:py-20">
@@ -30,17 +32,17 @@ export default function CalPolyCallout() {
               <p className="mt-4 max-w-xl text-base text-white/75 sm:text-lg">
                 Aura Farm starts at one campus. We&apos;re hand-crafting every
                 challenge with a real student crew so the experience feels alive
-                from day one. Sign up with your{" "}
+                from day one. The app is on the App Store — use your{" "}
                 <span className="font-semibold text-white">@calpoly.edu</span>{" "}
-                email to join the launch.
+                email when you sign up to play at Cal Poly.
               </p>
 
               <div className="mt-8 flex flex-wrap items-center gap-3">
                 <a
-                  href="#download"
+                  {...appStoreLinkProps}
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-bold text-aura-black transition hover:bg-white/90"
                 >
-                  Reserve your spot
+                  App Store
                 </a>
                 <a
                   href="#faq"

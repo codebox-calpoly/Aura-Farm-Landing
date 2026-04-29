@@ -1,3 +1,4 @@
+import { appStoreLinkProps } from "@/lib/app-links";
 import Image from "next/image";
 
 const colsClass = "flex flex-col gap-3";
@@ -54,7 +55,12 @@ export default function Footer() {
             <FooterLink href="#how-it-works">How it works</FooterLink>
             <FooterLink href="#features">Features</FooterLink>
             <FooterLink href="#tiers">Aura tiers</FooterLink>
-            <FooterLink href="#download">Get the app</FooterLink>
+            <a
+              {...appStoreLinkProps}
+              className="text-sm font-medium text-aura-black/70 transition-colors hover:text-aura-black"
+            >
+              Get the app
+            </a>
           </div>
 
           <div className={colsClass}>

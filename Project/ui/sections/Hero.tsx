@@ -1,5 +1,6 @@
 "use client";
 
+import { appStoreLinkProps } from "@/lib/app-links";
 import PhoneMockup from "./PhoneMockup";
 
 export default function Hero() {
@@ -18,7 +19,7 @@ export default function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-aura-green opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-aura-green" />
             </span>
-            Launching soon at Cal Poly
+            On the App Store at Cal Poly
           </span>
 
           <h1
@@ -43,7 +44,7 @@ export default function Hero() {
             data-reveal
           >
             <a
-              href="#download"
+              {...appStoreLinkProps}
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-aura-green px-7 py-4 text-base font-bold text-white shadow-[0_10px_30px_rgba(79,185,72,0.4)] transition-all hover:-translate-y-0.5 hover:shadow-[0_14px_36px_rgba(79,185,72,0.5)]"
             >
               Get the app
