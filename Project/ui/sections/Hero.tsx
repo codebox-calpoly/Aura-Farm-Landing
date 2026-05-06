@@ -19,7 +19,7 @@ export default function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-aura-green opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-aura-green" />
             </span>
-            On the App Store at Cal Poly
+            On the Apple App Store
           </span>
 
           <h1

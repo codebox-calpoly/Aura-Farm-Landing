@@ -2,7 +2,7 @@ import { appStoreLinkProps } from "@/lib/app-links";
 
 export default function CalPolyCallout() {
   return (
-    <section className="relative z-10 py-16 sm:py-20">
+    <section className="relative z-10 py-10 sm:py-14">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         <div
           className="reveal relative overflow-hidden rounded-3xl border border-black/10 bg-aura-black p-8 text-white shadow-[0_24px_60px_rgba(0,0,0,0.25)] sm:p-12 md:p-16"

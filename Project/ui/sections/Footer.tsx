@@ -29,7 +29,7 @@ export default function Footer() {
                 <span className="text-sm font-bold">cb</span>
               </SocialLink>
               <SocialLink
-                href="https://github.com"
+                href="https://github.com/codebox-calpoly/AuraFarm"
                 label="GitHub"
               >
                 <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor">

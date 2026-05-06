@@ -10,7 +10,7 @@ const tiers = [
 
 export default function Tiers() {
   return (
-    <section id="tiers" className="relative z-10 py-20 sm:py-28">
+    <section id="tiers" className="relative z-10 py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-2xl text-center" data-reveal>
           <p className="reveal text-sm font-bold uppercase tracking-[0.2em] text-aura-black/50">
@@ -25,7 +25,7 @@ export default function Tiers() {
           </p>
         </div>
 
-        <div className="mt-14">
+        <div className="mt-10">
           <div className="rounded-3xl border border-black/10 bg-white/85 p-3 backdrop-blur sm:p-4 lg:p-6 shadow-[0_18px_36px_rgba(0,0,0,0.06)]">
             <div className="flex items-center gap-2 overflow-x-auto pb-1 sm:gap-3">
               {tiers.map((tier, i) => (

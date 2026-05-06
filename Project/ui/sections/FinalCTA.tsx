@@ -2,7 +2,7 @@ import { appStoreLinkProps } from "@/lib/app-links";
 
 export default function FinalCTA() {
   return (
-    <section id="download" className="relative z-10 py-20 sm:py-28">
+    <section id="download" className="relative z-10 py-12 sm:py-16">
       <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-10">
         <h2
           className="reveal text-balance text-5xl font-black leading-[0.95] tracking-tight text-aura-black sm:text-6xl md:text-7xl"

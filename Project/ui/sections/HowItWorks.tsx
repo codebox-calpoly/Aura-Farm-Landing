@@ -48,7 +48,7 @@ export default function HowItWorks() {
   return (
     <section
       id="how-it-works"
-      className="relative z-10 py-20 sm:py-28"
+      className="relative z-10 py-12 sm:py-16"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-2xl text-center" data-reveal>
@@ -61,7 +61,7 @@ export default function HowItWorks() {
           </h2>
         </div>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-3 md:gap-8">
+        <div className="mt-10 grid gap-6 md:grid-cols-3 md:gap-8">
           {steps.map((step, i) => (
             <div
               key={step.number}

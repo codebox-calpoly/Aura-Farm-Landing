@@ -7,7 +7,6 @@ import Hero from "../ui/sections/Hero";
 import ChallengeMarquee from "../ui/sections/ChallengeMarquee";
 import HowItWorks from "../ui/sections/HowItWorks";
 import Features from "../ui/sections/Features";
-import Showcase from "../ui/sections/Showcase";
 import Tiers from "../ui/sections/Tiers";
 import CalPolyCallout from "../ui/sections/CalPolyCallout";
 import FAQ from "../ui/sections/FAQ";
@@ -104,7 +103,6 @@ export default function Home() {
         <Hero />
         <ChallengeMarquee />
         <HowItWorks />
-        <Showcase />
         <Features />
         <Tiers />
         <CalPolyCallout />

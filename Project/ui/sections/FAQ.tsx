@@ -33,7 +33,7 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="relative z-10 py-20 sm:py-28">
+    <section id="faq" className="relative z-10 py-12 sm:py-16">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-10">
         <div className="text-center" data-reveal>
           <p className="reveal text-sm font-bold uppercase tracking-[0.2em] text-aura-black/50">
@@ -44,7 +44,7 @@ export default function FAQ() {
           </h2>
         </div>
 
-        <div className="mt-12 space-y-3">
+        <div className="mt-8 space-y-3">
           {faq.map((item, i) => (
             <div
               key={item.q}

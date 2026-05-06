@@ -51,7 +51,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="relative z-10 py-20 sm:py-28">
+    <section id="features" className="relative z-10 py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-2xl text-center" data-reveal>
           <p className="reveal text-sm font-bold uppercase tracking-[0.2em] text-aura-black/50">
@@ -62,7 +62,7 @@ export default function Features() {
           </h2>
         </div>
 
-        <div className="mt-16 grid gap-5 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-5 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
           {features.map((f, i) => (
             <div
               key={f.title}
