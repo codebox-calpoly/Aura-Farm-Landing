@@ -62,7 +62,7 @@ export default function Nav() {
             {...appStoreLinkProps}
             className="hidden rounded-full bg-aura-black px-5 py-2.5 text-sm font-semibold text-white shadow-[0_6px_18px_rgba(0,0,0,0.15)] transition-transform hover:scale-105 hover:bg-aura-black/90 sm:inline-flex"
           >
-            Get the app
+            Get notified
           </a>
           <button
             type="button"
@@ -94,7 +94,7 @@ export default function Nav() {
               onClick={() => setOpen(false)}
               className="mt-2 rounded-full bg-aura-black px-5 py-3 text-center text-base font-semibold text-white"
             >
-              Get the app
+              Get notified
             </a>
           </div>
         </div>

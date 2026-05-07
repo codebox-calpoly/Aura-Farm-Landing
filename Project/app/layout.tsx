@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://aurafarm.app"),
   title: "Aura Farm — Touch grass. Earn aura.",
   description:
-    "Aura Farm turns your campus into a real-life game. Take on real-world challenges with friends, post photo proof, climb the leaderboard, and farm your aura. Available on the Apple App Store.",
+    "Aura Farm turns your campus into a real-life game. Take on real-world challenges with friends, post photo proof, climb the leaderboard, and farm your aura. Coming soon.",
   keywords: [
     "Aura Farm",
     "Cal Poly",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Aura Farm — Touch grass. Earn aura.",
     description:
-      "Real-life challenges. Real campus. Real aura. On the Apple App Store.",
+      "Real-life challenges. Real campus. Real aura. Coming soon.",
     url: "https://aurafarm.app",
     siteName: "Aura Farm",
     type: "website",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Aura Farm — Touch grass. Earn aura.",
     description:
-      "Real-life challenges. Real campus. Real aura. On the Apple App Store.",
+      "Real-life challenges. Real campus. Real aura. Coming soon.",
   },
   icons: {
     icon: "/favicon.ico",

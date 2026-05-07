@@ -19,7 +19,7 @@ export default function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-aura-green opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-aura-green" />
             </span>
-            On the Apple App Store
+            Coming soon
           </span>
 
           <h1
@@ -47,7 +47,7 @@ export default function Hero() {
               {...appStoreLinkProps}
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-aura-green px-7 py-4 text-base font-bold text-white shadow-[0_10px_30px_rgba(79,185,72,0.4)] transition-all hover:-translate-y-0.5 hover:shadow-[0_14px_36px_rgba(79,185,72,0.5)]"
             >
-              Get the app
+              Get notified
               <svg
                 className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
                 viewBox="0 0 20 20"
