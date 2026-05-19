@@ -32,7 +32,9 @@ export default function CalPolyCallout() {
               <p className="mt-4 max-w-xl text-base text-white/75 sm:text-lg">
                 Aura Farm starts at one campus. We&apos;re hand-crafting every
                 challenge with a real student crew so the experience feels alive
-                from day one. Sign up to be the first to know when we launch.
+                from day one. The app is on the App Store — use your{" "}
+                <span className="font-semibold text-white">@calpoly.edu</span>{" "}
+                email when you sign up to play at Cal Poly.
               </p>
 
               <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -40,7 +42,7 @@ export default function CalPolyCallout() {
                   {...appStoreLinkProps}
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-bold text-aura-black transition hover:bg-white/90"
                 >
-                  Get notified
+                  App Store
                 </a>
                 <a
                   href="#faq"

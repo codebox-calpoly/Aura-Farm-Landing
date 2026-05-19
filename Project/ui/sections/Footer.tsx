@@ -59,7 +59,7 @@ export default function Footer() {
               {...appStoreLinkProps}
               className="text-sm font-medium text-aura-black/70 transition-colors hover:text-aura-black"
             >
-              Get notified
+              Get the app
             </a>
           </div>
 

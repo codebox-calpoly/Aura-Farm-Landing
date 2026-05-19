@@ -1,11 +1,12 @@
 /**
- * Google Form waitlist link. Replace GOOGLE_FORM_URL with the real URL once available.
+ * iOS App Store listing. Override with NEXT_PUBLIC_APP_STORE_URL in `.env.local`.
  */
-export const GOOGLE_FORM_URL =
-  process.env.NEXT_PUBLIC_WAITLIST_URL?.trim() || "https://forms.gle/DVpnUcju76tDMZQeA";
+export const APP_STORE_URL =
+  process.env.NEXT_PUBLIC_APP_STORE_URL?.trim() ||
+  "https://apps.apple.com/us/app/aura-farm-cb/id6762101902";
 
 export const appStoreLinkProps = {
-  href: GOOGLE_FORM_URL,
+  href: APP_STORE_URL,
   target: "_blank" as const,
   rel: "noopener noreferrer" as const,
 };

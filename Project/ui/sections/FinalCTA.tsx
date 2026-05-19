@@ -15,10 +15,9 @@ export default function FinalCTA() {
           className="reveal mx-auto mt-6 max-w-xl text-lg text-aura-black/65 sm:text-xl"
           data-reveal
         >
-          Aura Farm is coming soon. Drop your info and we&apos;ll let you know
-          the moment it drops — use your{" "}
+          Aura Farm is live on the App Store. Grab it there — sign up with your{" "}
           <span className="font-semibold text-aura-black/80">@calpoly.edu</span>{" "}
-          email to play at Cal Poly.
+          email in the app to play at Cal Poly.
         </p>
 
         <div
@@ -30,7 +29,7 @@ export default function FinalCTA() {
             className="inline-flex h-14 items-center justify-center gap-2.5 rounded-full bg-aura-green px-8 text-base font-bold text-white shadow-[0_10px_30px_rgba(79,185,72,0.4)] transition-all hover:-translate-y-0.5 hover:shadow-[0_14px_36px_rgba(79,185,72,0.5)]"
           >
             <AppleMark className="h-5 w-5 shrink-0" />
-            Get notified at launch
+            Download on the App Store
           </a>
         </div>
       </div>
